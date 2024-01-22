@@ -2722,7 +2722,6 @@ input, select, textarea {
 		}
 
 	ul {
-		/* list-style: circle; */
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -2767,7 +2766,6 @@ input, select, textarea {
 		flex-wrap: wrap;
 		height: 6em;
 		font-family: 'Cutive Mono', monospace;
-		/* font-size: 0.8em; */
 		overflow: hidden;
 		max-width: 75%;
 		min-width: 450px;
@@ -4074,7 +4072,7 @@ input, select, textarea {
 			position: relative;
 			display: grid;
 			gap: 1em;
-			grid-template-columns: repeat(9, 1fr);
+			grid-template-columns: repeat(12, 1fr);
 			-webkit-box-align: center;
 			align-items: center;
 			padding: 0;
@@ -4082,7 +4080,7 @@ input, select, textarea {
 
 			#projects .featuredProject .projectContent {
 				position: relative;
-				grid-area: 1 / 1 / -1 / 6;
+				grid-area: 1 / 2 / -1 / 8;
 			}
 
 				#projects .featuredProject .projectContent .projectTitle {
@@ -4110,7 +4108,6 @@ input, select, textarea {
 					position: relative;
 					z-index: 2;
 					font-family: 'Cutive Mono', monospace;
-					/* font-size: 0.8em; */
 					margin-bottom: 0.5em;
 					padding: 0;
 				}
@@ -4129,9 +4126,13 @@ input, select, textarea {
 				}
 
 			#projects .featuredProject:nth-of-type(2n+1) .projectContent {
-				grid-column: 5 / -1;
+				grid-column: 6 / -2;
 				text-align: right;
 			}
+
+				#projects .featuredProject:nth-of-type(2n+1) .projectImage {
+					grid-column: 3 / 8;
+				}
 
 				#projects .featuredProject:nth-of-type(2n+1) .projectContent .projectTechList {
 					-webkit-box-pack: end;
@@ -4139,13 +4140,13 @@ input, select, textarea {
 				}
 
 					#projects .featuredProject:nth-of-type(2n+1) .projectContent .projectTechList li {
-						margin: 0 0 1em 1em;
+						margin: 0 0 0.25em 1em;
 					}
 
 			#projects .featuredProject .projectImage {
 				box-shadow: 0 10px 30px -15px #63F2CAB3;
 				transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
-				grid-area: 1 / 5 / -1 / -2;
+				grid-area: 1 / 8 / -1 / -3;
 				position: relative;
 				z-index: 1;
 			}
@@ -4159,8 +4160,20 @@ input, select, textarea {
 					margin: 0;
 				}
 
+					#projects .featuredProject .projectImage a::before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						inset: 0px;
+						z-index: 3;
+						transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+						background-color: var(--backgroundColor);
+						mix-blend-mode: screen;
+					}
+
 			#projects .featuredProject .projectImage.goalTrackPro {
-				grid-area: 1 / 5 / -1 / -3;
+				grid-column: 6 / -4;
 			}	
 			
 			#projects .featuredProject .projectImage:hover,
@@ -4168,12 +4181,100 @@ input, select, textarea {
 				box-shadow: 0 20px 30px -15px #63F2CAB3;	
 			}
 
-			#projects .featuredProject:nth-of-type(2n+1) .projectImage {
-				grid-column: 2 / 6;
-			}
-
 		#projects .featuredProject:not(:last-of-type) {
 			margin-bottom: 5em;
+		}
+
+		@media (max-width: 1080px) {
+
+				#projects .featuredProject .projectContent {
+					grid-column: 1 / 9;
+				}
+
+			#projects .featuredProject:nth-of-type(2n+1) .projectContent {
+				grid-column: 5 / -1;
+			}
+		}
+
+		@media (max-width: 768px) {
+			#projects .featuredProject {
+				box-shadow: 0 10px 30px -15px #63F2CAB3;
+				border-radius: 0.25em;
+				transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+			}
+
+				#projects .featuredProject .projectContent {
+					display: flex;
+					flex-direction: column;
+					-webkit-box-pack: center;
+					justify-content: center;
+					height: 100%;
+					grid-column: 1 / -1;
+					padding: 2em 2em 1.5em;
+					z-index: 5;
+					background-color: #0815269c;
+				}
+
+					#projects .featuredProject .projectContent .projectDescription {
+						padding: 1em 0;
+						background-color: transparent;
+						box-shadow: none;
+					}
+
+						#projects .featuredProject .projectContent .projectDescription:hover {
+							box-shadow: none;
+							border-bottom: none;
+						}
+
+					#projects .featuredProject .projectContent .projectTechList {
+						margin: 0.5em 0;
+					}
+
+						#projects .featuredProject .projectContent .projectTechList li {
+							color: var(--lightTextColor);
+							margin: 0 0.5em 0.25em 0;
+						}
+
+			#projects .featuredProject:nth-of-type(2n+1) .projectContent {
+				grid-column: 1 / -1;
+				padding: 2em 2em 1.5em;
+				text-align: left;
+			}
+
+				#projects .featuredProject:nth-of-type(2n+1) .projectContent .projectTechList {
+					-webkit-box-pack: start;
+					justify-content: flex-start;
+				}
+
+					#projects .featuredProject:nth-of-type(2n+1) .projectContent .projectTechList li {
+						margin: 0 0.5em 0.25em 0;
+					}
+
+			#projects .featuredProject:not(:last-of-type) {
+				margin-bottom: 3.5em;
+			}
+
+			#projects .featuredProject:nth-of-type(2n+1) .projectImage {
+				grid-column: 1 / -1;
+			}
+
+			#projects .featuredProject .projectImage {
+				grid-column: 1 / -1;
+				/* height: 100%; */
+				opacity: 0.25;
+			}
+
+			#projects .featuredProject .projectImage {
+				grid-column:  1 / -1;
+			}
+
+			#projects .featuredProject:nth-of-type(2n+1) .projectImage {
+				grid-column: 1 / -1;
+			}
+
+			#projects .featuredProject .projectImage.goalTrackPro {
+				grid-column: 6 / -1;
+			}
 		}
 
 
