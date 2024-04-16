@@ -7,10 +7,10 @@
 */
 
 :root {
-	--backgroundColor: #081526;
-	--accentColor: #63F2CA;
+	--backgroundColor: #1A1A1D;
+	--accentColor: #C3073F;
 	--lightTextColor: #CED7F2;
-	--darkTextColor: #818AA6;
+	--darkTextColor: #953753;
 }
 
 html, body, div, span, applet, object,
@@ -164,7 +164,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			border-bottom: solid 1px #63F2CA9f;
+			border-bottom: solid 1px #C3073F9f;
 		}
 
 	strong, b {
@@ -284,16 +284,16 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #63F2CA26;
+		border-left: solid 4px #C3073F26;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
 
 	code {
-		background: #63F2CA0D;
+		background: #C3073F0D;
 		border-radius: 0.25em;
-		border: solid 1px #63F2CA26;
+		border: solid 1px #C3073F26;
 		font-family: 'Cutive Mono', monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -316,7 +316,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #63F2CA26;
+		border-bottom: solid 1px #C3073F26;
 		margin: 2em 0;
 	}
 
@@ -1808,7 +1808,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 0.25em;
-		border: solid 1px #63F2CA26;
+		border: solid 1px #C3073F26;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -1834,7 +1834,7 @@ input, select, textarea {
 	button,
 	.button-64 {
 		align-items: center;
-		background-image: linear-gradient(144deg, var(--accentColor), #3a8c7d);
+		background-image: linear-gradient(144deg, var(--accentColor), #71464f);
 		border: 0;
 		border-radius: 8px;
 		box-shadow: #3a8c7d33 0 15px 30px -5px;
@@ -2011,7 +2011,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: var(--lightTextColor);
-			color: #63F2CA !important;
+			color: #C3073F !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2084,15 +2084,15 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px #63F2CA26;
-		background: #63F2CA0D;
+		border: solid 1px #C3073F26;
+		background: #C3073F0D;
 		margin: 0 0 2em 0;
 	}
 
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
-			border-top: solid 1px #63F2CA26;
+			border-top: solid 1px #C3073F26;
 			position: relative;
 		}
 
@@ -2101,7 +2101,7 @@ input, select, textarea {
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px #63F2CA26;
+				border-left: solid 1px #C3073F26;
 			}
 
 			.features section .icon {
@@ -2441,7 +2441,7 @@ input, select, textarea {
 		}
 
 	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#63F2CA26' /%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#C3073F26' /%3E%3C/svg%3E");
 		background-size: 1.25rem;
 		background-repeat: no-repeat;
 		background-position: calc(100% - 1rem) center;
@@ -2521,9 +2521,9 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: #63F2CA0D;
+				background: #C3073F0D;
 				border-radius: 0.25em;
-				border: solid 1px #63F2CA26;
+				border: solid 1px #C3073F26;
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2736,7 +2736,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px #63F2CA26;
+				border-top: solid 1px #C3073F26;
 				padding: 0.5em 0;
 			}
 
@@ -2957,7 +2957,7 @@ input, select, textarea {
 	}
 
 		ul.menu > li {
-			border-left: solid 1px #63F2CA26;
+			border-left: solid 1px #C3073F26;
 			display: inline-block;
 			line-height: 1;
 			margin-left: 1.5em;
@@ -3029,7 +3029,7 @@ input, select, textarea {
 
 		.split > :nth-child(2n - 1) {
 			padding-right: 2.5em;
-			border-right: solid 1px #63F2CA26;
+			border-right: solid 1px #C3073F26;
 		}
 
 		.split > :nth-child(2n) {
@@ -3075,7 +3075,7 @@ input, select, textarea {
 			}
 
 				.split > * {
-					border-top: solid 1px #63F2CA26;
+					border-top: solid 1px #C3073F26;
 					margin: 4em 0 0 0;
 					padding: 4em 0 0 0;
 					width: 100% !important;
@@ -3266,7 +3266,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #63F2CA26;
+			border: solid 1px #C3073F26;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -3288,11 +3288,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #63F2CA26;
+			border-bottom: solid 2px #C3073F26;
 		}
 
 		table tfoot {
-			border-top: solid 2px #63F2CA26;
+			border-top: solid 2px #C3073F26;
 		}
 
 		table.alt {
@@ -3300,7 +3300,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #63F2CA26;
+				border: solid 1px #C3073F26;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -3569,7 +3569,7 @@ input, select, textarea {
 				}
 
 				#header > nav {
-					border-top: solid 1px #63F2CA26;
+					border-top: solid 1px #C3073F26;
 					text-align: inherit;
 				}
 
@@ -3980,7 +3980,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #63F2CA9f;
+							background-color: #C3073F9f;
 						}
 
 		}
@@ -3997,7 +3997,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-color: #081526;
+		background-color: #1A1A1D;
 		background-image: url("images/confetti-doodles.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -4089,17 +4089,17 @@ input, select, textarea {
 				}
 
 				#projects .featuredProject .projectContent .projectDescription {
-					box-shadow: 0 10px 30px -15px #63F2CAB3;
+					box-shadow: 0 10px 30px -15px #C3073FB3;
 					border: none;
 					transition: all 0.2s ease;
 					position: relative;
 					z-index: 2;
-					background-color: #081526cf;
+					background-color: #1A1A1Dcf;
 				}
 
 				#projects .featuredProject .projectContent .projectDescription:hover {
-					box-shadow: 0 20px 30px -15px #63F2CAB3;
-					border-bottom: solid 1px #63F2CA9f;
+					box-shadow: 0 20px 30px -15px #C3073FB3;
+					border-bottom: solid 1px #C3073F9f;
 				}
 
 				#projects .featuredProject .projectContent .projectTechList {
@@ -4144,7 +4144,7 @@ input, select, textarea {
 					}
 
 			#projects .featuredProject .projectImage {
-				box-shadow: 0 10px 30px -15px #63F2CAB3;
+				box-shadow: 0 10px 30px -15px #C3073FB3;
 				transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 				grid-area: 1 / 8 / -1 / -3;
 				position: relative;
@@ -4178,7 +4178,7 @@ input, select, textarea {
 			
 			#projects .featuredProject .projectImage:hover,
 			#projects .featuredProject .projectImage:focus-visible {
-				box-shadow: 0 20px 30px -15px #63F2CAB3;	
+				box-shadow: 0 20px 30px -15px #C3073FB3;	
 			}
 
 		#projects .featuredProject:not(:last-of-type) {
@@ -4198,7 +4198,7 @@ input, select, textarea {
 
 		@media (max-width: 768px) {
 			#projects .featuredProject {
-				box-shadow: 0 10px 30px -15px #63F2CAB3;
+				box-shadow: 0 10px 30px -15px #C3073FB3;
 				border-radius: 0.25em;
 				transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 			}
@@ -4212,7 +4212,7 @@ input, select, textarea {
 					grid-column: 1 / -1;
 					padding: 2em 2em 1.5em;
 					z-index: 5;
-					background-color: #0815269c;
+					background-color: #1A1A1D9c;
 				}
 
 					#projects .featuredProject .projectContent .projectDescription {
